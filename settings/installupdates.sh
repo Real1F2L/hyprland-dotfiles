@@ -1,0 +1,1 @@
+$(cat ~/.config/1f2l/terminal.sh) --class dotfiles-floating -e ~/.config/1f2l-dotfiles/Scripts/install-system-updates

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+if [ -f $HOME/.config/1f2l/hide-fastfetch ]; then
+    echo ":: Show fastfetch"
+    rm $HOME/.config/1f2l/hide-fastfetch
+else
+    echo ":: Hide fastfetch"
+    touch $HOME/.config/1f2l/hide-fastfetch
+fi

@@ -1,0 +1,15 @@
+# Per-machine user state
+fish/fish_variables
+gtk-3.0/bookmarks
+
+# Personal wallpaper collection
+/Wallpapers/
+
+# Editor and backup artifacts
+*.bak
+*.orig
+*.rej
+*~
+.*.sw?
+.DS_Store
+Thumbs.db

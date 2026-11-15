@@ -1,0 +1,14 @@
+# -----------------------------------------------------
+# CUSTOMIZATION
+# -----------------------------------------------------
+POSH=agnoster
+
+# -----------------------------------------------------
+# Prompt
+# -----------------------------------------------------
+prompt_config="$HOME/.config/ohmyposh/zen.toml"
+matugen_prompt_config="$HOME/.config/ohmyposh/matugen.omp.json"
+if [[ -s "$matugen_prompt_config" ]]; then
+    prompt_config="$matugen_prompt_config"
+fi
+eval "$(oh-my-posh init bash --config "$prompt_config")"

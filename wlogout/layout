@@ -1,0 +1,30 @@
+{
+    "label" : "lock",
+    "action" : "~/.config/1f2l-dotfiles/Scripts/power.sh lock",
+    "text" : "Lock",
+    "keybind" : "l"
+}
+{
+    "label" : "logout",
+    "action" : "~/.config/1f2l-dotfiles/Scripts/power.sh exit",
+    "text" : "Log Out",
+    "keybind" : "e"
+}
+{
+    "label" : "suspend",
+    "action" : "~/.config/1f2l-dotfiles/Scripts/power.sh suspend",
+    "text" : "Suspend",
+    "keybind" : "u"
+}
+{
+    "label" : "reboot",
+    "action" : "~/.config/1f2l-dotfiles/Scripts/power.sh reboot",
+    "text" : "Restart",
+    "keybind" : "r"
+}
+{
+    "label" : "shutdown",
+    "action" : "~/.config/1f2l-dotfiles/Scripts/power.sh shutdown",
+    "text" : "Power Off",
+    "keybind" : "s"
+}

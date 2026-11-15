@@ -1,0 +1,9 @@
+{
+    "bar": {
+        "enabled": false,
+        "alwaysExpanded": false
+    },
+    "workspaces": {
+        "count": 9
+    }
+}

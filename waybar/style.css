@@ -1,0 +1,130 @@
+@import "colors.css";
+@import "wallpaper-brightness.css";
+
+* {
+    /* Text size */
+    font-size: 16px;
+
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+#waybar {
+    background: transparent;
+    color: @on_surface;
+}
+
+#waybar label {
+    text-shadow: 0 1px 1px alpha(@scrim, 0.3);
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background-color: rgba(255, 255, 255, 0.065);
+
+    border: 1px solid alpha(@on_surface, 0.3);
+    border-radius: 12px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#clock {
+    color: @on_surface;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 3px 8px;
+    text-shadow: 0 1px 1px alpha(@scrim, 0.3);
+}
+
+label.module {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* Space modules on right */
+.modules-right * {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+/* Space custom modules on left */
+.module {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
+}
+.modules-left > widget:hover,
+.modules-center > widget:hover,
+.modules-right > widget:hover,
+.module:hover {
+    border-radius: 4px;
+    background-color: alpha(@surface_container_highest, 0.65);
+}
+
+/* Popups */
+tooltip {
+    background-color: @surface_container;
+    color: @on_surface;
+    border: 1px solid @outline;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#clock calendar {
+    background-color: @surface_container;
+    color: @on_surface;
+    border-radius: 8px;
+    padding: 6px;
+    min-width: 280px;
+    min-height: 220px;
+}
+
+#clock calendar.header {
+    color: @primary;
+    font-weight: bold;
+}
+
+#clock calendar.button {
+    color: @on_surface;
+    border-radius: 6px;
+}
+
+#clock calendar.button:hover {
+    background-color: @surface_container_highest;
+}
+
+#clock calendar.highlight {
+    color: @secondary;
+    font-weight: bold;
+}
+
+#clock calendar:indeterminate {
+    color: @on_surface_variant;
+}
+
+#clock calendar:selected {
+    background-color: @primary;
+    color: @on_primary;
+    border-radius: 6px;
+}
+
+#tray {
+    color: @on_surface;
+}
+
+#tray image {
+    -gtk-icon-effect: none;
+    color: @on_surface;
+}
