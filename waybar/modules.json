@@ -48,6 +48,22 @@
     "on-scroll-up": "true",
     "on-scroll-down": "true"
   },
+  "battery": {
+    "states": {
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {icon} {capacity}%",
+    "format-plugged": " {icon} {capacity}%",
+    "format-full": "{icon} {capacity}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
   "pulseaudio": {
     "max-volume": 200,
     "format": " {icon}   {volume}% {format_source}",

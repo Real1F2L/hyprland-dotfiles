@@ -47,6 +47,10 @@
     text-shadow: 0 1px 1px alpha(@scrim, 0.3);
 }
 
+#battery.critical {
+    color: #ff3333;
+}
+
 label.module {
     margin-left: 2px;
     margin-right: 2px;
