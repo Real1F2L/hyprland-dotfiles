@@ -125,17 +125,6 @@ run_matugen() {
     fi
 }
 
-reload_waybar() {
-    if pgrep -x waybar >/dev/null; then
-        pkill -SIGUSR2 waybar
-        info "Waybar reloaded"
-    else
-        nohup "$HOME/.config/1f2l-dotfiles/Scripts/waybar-launch.sh" >/dev/null 2>&1 &
-        disown
-        info "Waybar launched"
-    fi
-}
-
 reload_nwg_dock() {
     # disabled: reload_nwg_dock removed to prevent window jumping
     disown
@@ -253,7 +242,6 @@ else
     if ! run_matugen; then
         exit 1
     fi
-    reload_waybar
     reload_nwg_dock
     reload_quickshell
     reload_pywalfox

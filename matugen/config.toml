@@ -16,7 +16,6 @@ output_path = '~/.config/btop/themes/matugen.theme'
 [templates.hyprland]
 input_path = '~/.config/matugen/templates/hyprland-colors.conf'
 output_path = '~/.config/hypr/colors.conf'
-post_hook = 'hyprctl reload'
 
 [templates.rofi]
 input_path = '~/.config/matugen/templates/rofi-colors.rasi'

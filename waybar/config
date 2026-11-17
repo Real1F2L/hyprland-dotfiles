@@ -9,6 +9,7 @@
     "include": [
         "~/.config/waybar/modules.json"
     ],
+    "reload_style_on_change": true,
 
     "modules-left": [
         "custom/appmenu",

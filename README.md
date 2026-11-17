@@ -36,7 +36,9 @@ At startup, the session uses the last wallpaper if it still exists; otherwise,
 it selects an image from the configured wallpaper folder. If no image is
 available, wallpaper setup is skipped while the rest of the session continues.
 Matugen updates the themes and Waybar chooses a contrasting background based
-on the selected image's brightness.
+on the selected image's brightness. Waybar's brightness override changes only
+a CSS color variable, so it does not change bar geometry. Wallpaper theme
+updates do not reload Hyprland.
 
 ## Repository notes
 
